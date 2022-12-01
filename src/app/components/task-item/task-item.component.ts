@@ -12,4 +12,8 @@ export class TaskItemComponent {
   task!: Task;
   faTimes = faTimes;
 
+ onDelete(task: any ){
+    this.onDeleteTask.emit(task);
+  }
+
 }
